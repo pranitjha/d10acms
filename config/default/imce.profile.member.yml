@@ -26,3 +26,6 @@ conf:
         browse_files: true
         upload_files: true
         delete_files: true
+    -
+      path: cohesion
+      permissions: {  }

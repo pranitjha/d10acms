@@ -24,3 +24,6 @@ conf:
       path: .
       permissions:
         all: true
+    -
+      path: cohesion
+      permissions: {  }

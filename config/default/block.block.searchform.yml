@@ -1,0 +1,26 @@
+uuid: 4b2c4385-0128-4389-9603-5da2e863e26b
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion
+    - search
+  theme:
+    - cohesion_theme
+id: searchform
+theme: cohesion_theme
+region: dx8_hidden
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    using_master_template: 0
+    negate: false

@@ -38,6 +38,7 @@ module:
   path: 0
   path_alias: 0
   rest: 0
+  search: 0
   serialization: 0
   sitestudio_page_builder: 0
   system: 0
