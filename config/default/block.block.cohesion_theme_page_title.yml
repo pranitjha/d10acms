@@ -1,0 +1,20 @@
+uuid: e3cb64fc-c030-47f0-b56a-b4779bfd4ddb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
+id: cohesion_theme_page_title
+theme: cohesion_theme
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

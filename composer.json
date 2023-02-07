@@ -13,10 +13,14 @@
         "php": ">=8.1",
         "acquia/acquia-cms-starterkit": "^1",
         "acquia/blt": "^13.7",
+        "acquia/blt-site-studio": "2.x-dev",
+        "acquia/cohesion-theme": "^7.0",
         "acquia/drupal-environment-detector": "^1",
         "acquia/memcache-settings": "^1",
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.6",
+        "drupal/admin_toolbar": "^3.3",
+        "drupal/config_split": "^1.9",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-recommended": "^10",
         "drush/drush": "^11",
@@ -39,7 +43,8 @@
             "drupal/core-composer-scaffold": true,
             "ergebnis/composer-normalize": true,
             "oomphinc/composer-installers-extender": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "acquia/blt": false
         },
         "platform": {
             "php": "8.1"
@@ -113,6 +118,11 @@
         "patches": {}
     },
     "repositories": {
+        "blt-site-studio": {
+            "type": "vcs",
+            "url": "https://github.com/pranitjha/blt-site-studio.git",
+            "no-api": true
+        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"

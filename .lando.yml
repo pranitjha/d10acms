@@ -2,3 +2,16 @@ name: d10acms
 recipe: drupal9
 config:
   webroot: docroot
+  php: '8.1'
+  composer_version: '2'
+services:
+  appserver:
+    config:
+      php: .lando/php.ini
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://d10acms.lndo.site/"
+tooling:
+  blt:
+    service: appserver
+    cmd: /app/vendor/bin/blt

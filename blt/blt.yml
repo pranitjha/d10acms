@@ -1,2 +1,24 @@
 project:
+  prefix: D10ACMS
   machine_name: d10acms
+  human_name: 'Drupal 10 ACMS'
+  profile:
+    name: minimal
+  local:
+    hostname: '${project.machine_name}.lndo.site'
+    protocol: https
+    uri: '${project.local.protocol}://${project.local.hostname}'
+cm:
+  strategy: config-split
+  core:
+    install_from_config: true
+deploy:
+  tag_source: true
+validate:
+  twig:
+    functions: [drupal_entity]
+site-studio:
+  cohesion-import: true
+  sync-import: false
+  package-import: true
+  rebuild: true
