@@ -146,6 +146,7 @@ $settings['site_studio_sync'] = '../config/site_studio_sync';
 // Export site studio config as expanded multiline.
 $settings['site_studio_package_multiline'] = TRUE;
 ```
+* Add new directory for site_studio packages 'config/site_studio_sync'
 * Run lando
 ```
 lando start
