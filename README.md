@@ -23,6 +23,25 @@ The Acquia CMS starter kit allows you to install Drupal for a given style of CMS
 
 ## Installation of Drupal 10 + ACMS + UI Kit + BLT + Lando
 
+### Installation on top of this repo:
+* Git clone the repo
+```
+git clone git@github.com:pranitjha/d10acms.git
+```
+* Run composer install
+```
+composer install
+```
+* Run lando start
+```
+lando start
+```
+* Run blt setup
+```
+blt setup
+```
+
+### Fresh installation steps:
 * Create a new project using Composer:
 ```
 composer create-project acquia/drupal-recommended-project <project_name>
