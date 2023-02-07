@@ -21,11 +21,164 @@ The Acquia CMS starter kit allows you to install Drupal for a given style of CMS
 | Acquia CMS Community  | The community starter kit will install Acquia CMS. An optional content model can be added in the installation process.  |
 | Acquia CMS Headless  | The headless starter kit preconfigures Drupal for serving structured, RESTful content to 3rd party content displays such as mobile apps, smart displays and frontend driven websites (e.g. React or Next.js).  |
 
-## Installation and usage
+## Installation of Drupal 10 + ACMS + UI Kit + BLT + Lando
 
-Create a new project using Composer:
+* Create a new project using Composer:
 ```
-composer create-project --no-interaction acquia/drupal-recommended-project
+composer create-project acquia/drupal-recommended-project <project_name>
+```
+* Move to the directory
+```
+cd <project_name>
+```
+* Initilize lando
+```
+lando init --source cwd --recipe drupal9 --webroot docroot --name <project_name>
+```
+* Add BLT
+```
+composer require acquia/blt -W
+```
+* Update composer.json for blt plugin for site studio
+```
+composer config repositories.blt-site-studio '{"type": "vcs", "url": "https://github.com/pranitjha/blt-site-studio.git", "no-api": true}'
+```
+* Add site studio blt plugin
+```
+composer req acquia/blt-site-studio
+```
+* Add site studio theme
+```
+composer require acquia/cohesion-theme
+```
+* Update .lando.yml file
+```
+name: <project_name>
+recipe: drupal9
+config:
+  webroot: docroot
+  php: '8.1'
+  composer_version: '2'
+services:
+  appserver:
+    config:
+      php: .lando/php.ini
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://<project_name>.lndo.site/"
+tooling:
+  blt:
+    service: appserver
+    cmd: /app/vendor/bin/blt
+```
+* Update blt/blt.yml file
+```
+project:
+  prefix: <project_name>
+  machine_name: <project_name>
+  human_name: '<project_name>'
+  profile:
+    name: minimal
+  local:
+    hostname: '${project.machine_name}.lndo.site'
+    protocol: https
+    uri: '${project.local.protocol}://${project.local.hostname}'
+cm:
+  strategy: config-split
+  core:
+    install_from_config: true
+deploy:
+  tag_source: true
+validate:
+  twig:
+    functions: [drupal_entity]
+site-studio:
+  cohesion-import: true
+  sync-import: false
+  package-import: true
+  rebuild: true
+```
+* Update docroot/sites/default/settings/local.settings.php file, Check the DB credentials and update with below details:
+```
+$db_name = 'drupal9';
+
+/**
+ * Database configuration.
+ */
+$databases['default']['default'] = [
+  'database' => $db_name,
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'host' => 'database',
+  'port' => '3306',
+  'driver' => 'mysql',
+  'prefix' => '',
+];
+```
+And for local setup, you can add site studio keys in the local.settings.php file.
+```
+// Cohesion Settings.
+$config['cohesion.settings']['api_key'] = '<API_KEY>';
+$config['cohesion.settings']['organization_key'] = '<ORGANISATION_KEY>';
+$settings['dx8_no_api_keys'] = TRUE;
+```
+* Add couple of new settings file to docroot/sites/default/settings/includes.settings.php and docroot/sites/default/settings/site_studio.settings.php
+```
+// includes.settings.php
+$additionalSettingsFiles = [
+  // e.g,( DRUPAL_ROOT . "/sites/$site_dir/settings/foo.settings.php" )
+  DRUPAL_ROOT . "/sites/default/settings/site_studio.settings.php",
+];
+
+foreach ($additionalSettingsFiles as $settingsFile) {
+  if (file_exists($settingsFile)) {
+    // phpcs:ignore
+    require $settingsFile;
+  }
+}
+```
+and,
+```
+// site_studio.settings.php
+// Define site_studio_sync directory for package storage.
+$settings['site_studio_sync'] = '../config/site_studio_sync';
+
+// Export site studio config as expanded multiline.
+$settings['site_studio_package_multiline'] = TRUE;
+```
+* Run lando
+```
+lando start
+```
+* Turn off the allow-plugins.acquia/blt
+```
+lando composer config --no-plugins allow-plugins.acquia/blt false
+```
+* Run blt setup
+```
+lando blt setup
+```
+* Clear Cache
+```
+lando drush cr
+```
+* Generate one time login link
+```
+lando drush uli
+```
+* Enable `Claro` as admin theme and `site studio minimal` as default theme.
+* Enable site studio related modules
+* Enable few more modules like (path, image, menu_ui, config_ignore, toolbar)
+* Add configuration for config ignore by adding `cohesion*` in the ignore list.
+* Download UI Kit from https://sitestudiodocs.acquia.com/7.0/user-guide/download-primitives-uikit
+* Upload the ui kit package to the url: `'/admin/cohesion/sync/import'`
+* Export config
+```
+lando drush cex
+```
+* Export Site studio config
+```
+lando drush cohesion:export
 ```
 
 Once you create the project, you can and should customize `composer.json` and the rest of the project to suit your needs. You will receive updates from any dependent packages, but not from the project template itself. It's yours to keep!
