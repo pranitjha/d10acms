@@ -78,13 +78,6 @@ config:
   webroot: docroot
   php: '8.1'
   composer_version: '2'
-services:
-  appserver:
-    config:
-      php: .lando/php.ini
-    overrides:
-      environment:
-        DRUSH_OPTIONS_URI: "https://<project_name>.lndo.site/"
 tooling:
   blt:
     service: appserver
@@ -110,11 +103,6 @@ deploy:
 validate:
   twig:
     functions: [drupal_entity]
-site-studio:
-  cohesion-import: true
-  sync-import: false
-  package-import: true
-  rebuild: true
 ```
 * Add `blt/example.local.blt.yml` file
 ```
@@ -159,7 +147,41 @@ $databases['default']['default'] = [
   'prefix' => '',
 ];
 ```
-And for local setup, you can add site studio keys in the local.settings.php file.
+* Run lando
+```
+lando start
+```
+* Turn off the allow-plugins.acquia/blt
+```
+lando composer config --no-plugins allow-plugins.acquia/blt false
+```
+* Run blt setup
+```
+lando blt setup
+```
+* Clear Cache
+```
+lando drush cr
+```
+* Update .lando.yml file
+```
+services:
+  appserver:
+    config:
+      php: .lando/php.ini
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://<project_name>.lndo.site/"
+```
+* Update blt/blt.yml
+```
+site-studio:
+  cohesion-import: true
+  sync-import: false
+  package-import: true
+  rebuild: true
+```
+* For local setup, you can add site studio keys in the local.settings.php file.
 ```
 // Cohesion Settings.
 $config['cohesion.settings']['api_key'] = '<API_KEY>';
@@ -190,18 +212,14 @@ $settings['site_studio_sync'] = '../config/site_studio_sync';
 // Export site studio config as expanded multiline.
 $settings['site_studio_package_multiline'] = TRUE;
 ```
-* Add new directory for site_studio packages 'config/site_studio_sync'
-* Run lando
+* Add new directory for site_studio packages `'config/site_studio_sync'`
+* Restart lando
 ```
-lando start
+lando rebuild
 ```
-* Turn off the allow-plugins.acquia/blt
+* Run blt drupal update
 ```
-lando composer config --no-plugins allow-plugins.acquia/blt false
-```
-* Run blt setup
-```
-lando blt setup
+lando blt du
 ```
 * Clear Cache
 ```
@@ -227,6 +245,7 @@ lando drush cex
 ```
 lando drush sitestudio:package:export
 ```
+-----------------------Setup Complete-----------------------
 
 Once you create the project, you can and should customize `composer.json` and the rest of the project to suit your needs. You will receive updates from any dependent packages, but not from the project template itself. It's yours to keep!
 
