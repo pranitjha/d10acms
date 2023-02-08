@@ -217,6 +217,8 @@ lando drush uli
 * Add configuration for config ignore by adding `cohesion_*` in the ignore list.
 * Download UI Kit from https://sitestudiodocs.acquia.com/7.0/user-guide/download-primitives-uikit
 * Upload the ui kit package to the url: `'/admin/cohesion/sync/import'`
+* Do the site studio configuration export settings, Goto `'/admin/cohesion/sync/export_settings'` and select all checkboxes and save.
+* Do the Image browser settings for content and configuration, Goto `'/admin/cohesion/configuration/system-settings'` and select 'Imce file manager' for 'Image browser for config' and 'Image browser for content'.
 * Export config
 ```
 lando drush cex
