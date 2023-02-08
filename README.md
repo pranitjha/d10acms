@@ -245,7 +245,7 @@ lando drush cex
 ```
 lando drush sitestudio:package:export
 ```
------------------------Setup Complete-----------------------
+---------------------------------------------------------------
 
 Once you create the project, you can and should customize `composer.json` and the rest of the project to suit your needs. You will receive updates from any dependent packages, but not from the project template itself. It's yours to keep!
 
