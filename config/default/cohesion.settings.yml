@@ -1,0 +1,13 @@
+asset_is_imported: '1'
+animate_on_view_mobile: DISABLED
+sidebar_view_style: titles
+log_dx8_error: disable
+add_animation_classes: DISABLED
+sync_legacy_visibility: false
+image_browser:
+  config:
+    type: imce_imagebrowser
+    dx8_imce_stream_wrapper: public
+  content:
+    type: imce_imagebrowser
+    dx8_imce_stream_wrapper: public
