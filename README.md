@@ -116,6 +116,32 @@ site-studio:
   package-import: true
   rebuild: true
 ```
+* Add `blt/example.local.blt.yml` file
+```
+# Override any settings as necessary by copying to project.local.yml
+#project:
+#  local:
+#    protocol: http
+#    hostname: mysite.dev
+
+# You can set custom project aliases in drush/site-aliases/aliases.drushrc.php.
+# All local:* targets are run against drush.aliases.local.
+#drush:
+#  aliases:
+#    local: local.mysite.dev
+
+drupal:
+  db:
+    database: drupal9
+    username: drupal9
+    password: drupal9
+    host: database
+
+project:
+  local:
+    protocol: http
+    hostname: '${project.machine_name}.lndo.site'
+```
 * Update docroot/sites/default/settings/local.settings.php file, Check the DB credentials and update with below details:
 ```
 $db_name = 'drupal9';
@@ -197,7 +223,7 @@ lando drush cex
 ```
 * Export Site studio config (https://sitestudiodocs.acquia.com/7.0/user-guide/site-studio-drush-commands)
 ```
-lando drush sitestudio:package:export 
+lando drush sitestudio:package:export
 ```
 
 Once you create the project, you can and should customize `composer.json` and the rest of the project to suit your needs. You will receive updates from any dependent packages, but not from the project template itself. It's yours to keep!
