@@ -195,9 +195,9 @@ lando drush uli
 ```
 lando drush cex
 ```
-* Export Site studio config
+* Export Site studio config (https://sitestudiodocs.acquia.com/7.0/user-guide/site-studio-drush-commands)
 ```
-lando drush cohesion:export
+lando drush sitestudio:package:export 
 ```
 
 Once you create the project, you can and should customize `composer.json` and the rest of the project to suit your needs. You will receive updates from any dependent packages, but not from the project template itself. It's yours to keep!
