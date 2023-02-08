@@ -214,7 +214,7 @@ lando drush uli
 * Enable `Claro` as admin theme and `site studio minimal` as default theme.
 * Enable site studio related modules
 * Enable few more modules like (path, image, menu_ui, config_ignore, toolbar)
-* Add configuration for config ignore by adding `cohesion*` in the ignore list.
+* Add configuration for config ignore by adding `cohesion_*` in the ignore list.
 * Download UI Kit from https://sitestudiodocs.acquia.com/7.0/user-guide/download-primitives-uikit
 * Upload the ui kit package to the url: `'/admin/cohesion/sync/import'`
 * Export config
