@@ -2,8 +2,8 @@ uuid: 1abef8b2-4144-48f1-a162-f7a4ec0bc993
 langcode: en
 status: true
 dependencies: {  }
-id: brand-color
 label: 'Brand color'
+id: brand-color
 json_values: |
   {
       "link": true,
@@ -26,9 +26,8 @@ json_values: |
           }
       ]
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

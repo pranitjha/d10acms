@@ -7,8 +7,8 @@ dependencies:
     - cohesion_elements.cohesion_component_category.cpt_cat_basic_components
   content:
     - 'file:file:fbd426c5-8351-4f72-abe3-88cd9ada92b1'
-id: cpt_video
 label: Video
+id: cpt_video
 json_values: |
   {
       "canvas": [
@@ -457,7 +457,7 @@ json_values: |
                   "title": "Video",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -517,7 +517,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -574,7 +574,7 @@ json_values: |
                   "options": {
                       "helpText": "# Using the Video component\n- Use the Video component to add a video to a layout from the media library.\n- The video component is best placed within a Layout or other containing component.\n\n# Video\n- **Video media -** Select a video from the media library\n\n# Space below\n- **Add space below -** Add a space (margin) below the video. This is required if a space is desirable when adding this component above another component within the same parent layout component.",
                       "showClose": false,
-                      "helpType": "coh-help-text--help"
+                      "helpType": "help"
                   }
               },
               "contextVisibility": {
@@ -663,9 +663,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

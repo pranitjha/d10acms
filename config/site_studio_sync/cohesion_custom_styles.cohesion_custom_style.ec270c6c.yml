@@ -7,13 +7,18 @@ dependencies:
     - cohesion_website_settings.cohesion_color.brand-color-light
     - cohesion_website_settings.cohesion_color.white
     - cohesion_website_settings.cohesion_icon_library.icomoon
-id: ec270c6c
 label: 'Read more button color'
+id: ec270c6c
 json_values: |
   {
       "preview": {
           "text": "<p><button class=\"coh-preview\" type=\"button\">Read more<\/button><\/p>\n\n<p><button class=\"coh-preview is-expanded\" type=\"button\">Read less<\/button><\/p>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
       "styles": {
           "settings": {
@@ -232,10 +237,8 @@ json_values: |
               "styles": {}
           }
       },
-      "sBackgroundColour": "#ffffff",
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -769,13 +772,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-read-more-button-color
 custom_style_type: button
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 28

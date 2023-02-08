@@ -8,8 +8,8 @@ dependencies:
   content:
     - 'file:file:43c2db67-80b8-4986-b958-e33c3697f9ea'
     - 'file:file:4e54ff75-bf02-4a87-b4d2-d526dc1bb227'
-id: cpt_image
 label: Image
+id: cpt_image
 json_values: |
   {
       "canvas": [
@@ -659,7 +659,7 @@ json_values: |
                   "title": "Image",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -685,14 +685,14 @@ json_values: |
                   "isStyle": true,
                   "defaultActive": true,
                   "schema": {
-                      "type": "string",
-                      "required": true
+                      "type": "string"
                   },
                   "machineName": "image",
                   "tooltipPlacement": "auto right",
                   "validationMessage": {
                       "302": "Please upload an image."
-                  }
+                  },
+                  "required": true
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -707,7 +707,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -769,15 +769,15 @@ json_values: |
                   "title": "Alt tag",
                   "schema": {
                       "type": "string",
-                      "escape": true,
-                      "required": false
+                      "escape": true
                   },
                   "machineName": "alt-tag",
                   "tooltipPlacement": "auto top-left",
                   "validationMessage": {
                       "302": ""
                   },
-                  "tooltipText": "Enter an alt tag unless image is decorative"
+                  "tooltipText": "Enter an alt tag unless image is decorative",
+                  "required": false
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -802,7 +802,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -849,7 +849,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -906,7 +906,7 @@ json_values: |
                   "options": {
                       "helpText": "# Using the Image component\n- Use the image component to add an image to a layout.\n- The image component is best placed within a Layout or other containing component.\n\n# Image\n- **Image -** Upload and image. This field is required.\n- **Alt tag -** Enter an alt tag unless image is decorative.\n- **Image size -** Set the size and aspect ratio of the image. image display size. Sizes that only specify a width will retain the aspect ratio of the original image. Sizes that specify a width and height will resize and crop the image where required.\n\n# Layout\n- **Height -** Set the image height to fill the space available. The image maybe cropped. \n- **Space below image** - Add a space (margin) below the image. This is required if a space is desirable when adding this component above another component within the same parent layout component.",
                       "showClose": false,
-                      "helpType": "coh-help-text--help"
+                      "helpType": "help"
                   }
               },
               "contextVisibility": {
@@ -1012,9 +1012,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

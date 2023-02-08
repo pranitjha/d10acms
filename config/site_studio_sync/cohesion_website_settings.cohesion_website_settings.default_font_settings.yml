@@ -5,8 +5,8 @@ dependencies:
   config:
     - cohesion_website_settings.cohesion_color.black
     - cohesion_website_settings.cohesion_font_stack.roboto
-id: default_font_settings
 label: 'Default font settings'
+id: default_font_settings
 json_values: |
   {
       "defaultFontStack": "$coh-font-roboto",
@@ -23,9 +23,8 @@ json_values: |
           "inuse": false
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

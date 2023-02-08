@@ -12,8 +12,8 @@ dependencies:
     - cohesion_templates.cohesion_menu_templates.menu_tpl_footer
   content:
     - 'file:file:a483c3c3-a05f-47a3-ac8f-170209631484'
-id: cpt_site_footer
 label: 'Site footer'
+id: cpt_site_footer
 json_values: |
   {
       "canvas": [
@@ -4732,7 +4732,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4770,7 +4770,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4818,7 +4818,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4868,7 +4868,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5020,9 +5020,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

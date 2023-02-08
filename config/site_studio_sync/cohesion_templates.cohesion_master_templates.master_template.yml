@@ -10,8 +10,8 @@ dependencies:
     - cohesion_elements.cohesion_component.cpt_site_header
   content:
     - 'file:file:b8cce27d-8733-4c3f-92d9-4983d321a490'
-id: master_template
 label: 'Master template'
+id: master_template
 json_values: |
   {
       "canvas": [
@@ -412,9 +412,8 @@ json_values: |
           "fieldHistory": []
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

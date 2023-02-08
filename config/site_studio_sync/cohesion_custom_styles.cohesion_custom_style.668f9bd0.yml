@@ -7,13 +7,18 @@ dependencies:
     - cohesion_website_settings.cohesion_color.brand-color
     - cohesion_website_settings.cohesion_color.brand-color-light
     - cohesion_website_settings.cohesion_color.white
-id: 668f9bd0
 label: 'View pagination'
+id: 668f9bd0
 json_values: |
   {
       "preview": {
           "text": "<ul class=\"coh-preview\">\n\t<li class=\"pager__item pager__item--first\"><a>First<\/a><\/li>\n\t<li class=\"pager__item pager__item--previous\"><a>&lt;<\/a><\/li>\n\t<li class=\"pager__item\"><a>1<\/a><\/li>\n\t<li class=\"pager__item is-active\"><a>2<\/a><\/li>\n\t<li class=\"pager__item\"><a>3<\/a><\/li>\n\t<li class=\"pager__item\"><a>4<\/a><\/li>\n\t<li class=\"pager__item pager__item--next\"><a>&gt;<\/a><\/li>\n\t<li class=\"pager__item pager__item--last\"><a>Last<\/a><\/li>\n<\/ul>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
       "styles": {
           "settings": {
@@ -432,10 +437,8 @@ json_values: |
               "styles": {}
           }
       },
-      "sBackgroundColour": "#FFFFFF",
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -1292,13 +1295,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-view-pagination
 custom_style_type: list
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 49

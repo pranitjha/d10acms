@@ -7,8 +7,8 @@ dependencies:
     - cohesion_website_settings.cohesion_icon_library.icomoon
   content:
     - 'file:file:ab25b31e-3c9a-4dd2-85c2-5ddaac592ffc'
-id: cpt_social_links
 label: 'Social links'
+id: cpt_social_links
 json_values: |
   {
       "canvas": [
@@ -2778,7 +2778,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -2796,7 +2796,6 @@ json_values: |
                   "type": "cohArray",
                   "componentField": true,
                   "noTitle": true,
-                  "htmlClass": "coh-array--field-repeater",
                   "disableScrollbar": true,
                   "addText": "Add social link",
                   "key": "field-repeater",
@@ -2829,7 +2828,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3067,9 +3066,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

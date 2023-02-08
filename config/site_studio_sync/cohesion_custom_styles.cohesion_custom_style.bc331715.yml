@@ -2,15 +2,19 @@ uuid: 2658c38e-289b-4f56-99ff-81fabab879fc
 langcode: en
 status: true
 dependencies: {  }
-id: bc331715
 label: 'Multi column two column'
+id: bc331715
 json_values: |
   {
       "preview": {
           "text": "<div class=\"coh-preview\">Default content for 'Layout'.<\/div>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
-      "sBackgroundColour": "#FFFFFF",
       "styles": {
           "settings": {
               "element": "div",
@@ -55,7 +59,6 @@ json_values: |
       },
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -120,13 +123,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-multi-column-two-column
 custom_style_type: layout
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 41

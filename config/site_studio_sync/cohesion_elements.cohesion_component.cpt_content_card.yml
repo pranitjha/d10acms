@@ -16,8 +16,8 @@ dependencies:
   content:
     - 'file:file:43c2db67-80b8-4986-b958-e33c3697f9ea'
     - 'file:file:48557fce-9bbb-4de9-b8af-9b637b3217c3'
-id: cpt_content_card
 label: 'Content card'
+id: cpt_content_card
 json_values: |
   {
       "canvas": [
@@ -3411,7 +3411,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3453,8 +3453,7 @@ json_values: |
                   "title": "Alt tag",
                   "schema": {
                       "type": "string",
-                      "escape": true,
-                      "required": false
+                      "escape": true
                   },
                   "machineName": "alt-tag",
                   "tooltipPlacement": "auto top-left",
@@ -3463,7 +3462,8 @@ json_values: |
                       "302": ""
                   },
                   "showCondition": "[field.b9852a50-22b1-4794-a3cf-9d90553327fe]",
-                  "tooltipText": "Enter an alt tag unless image is decorative"
+                  "tooltipText": "Enter an alt tag unless image is decorative",
+                  "required": false
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -3477,7 +3477,7 @@ json_values: |
                   "type": "cohSection",
                   "title": "Text",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -3535,14 +3535,14 @@ json_values: |
                   "title": "Card heading",
                   "schema": {
                       "type": "string",
-                      "escape": true,
-                      "required": true
+                      "escape": true
                   },
                   "machineName": "card-heading",
                   "tooltipPlacement": "auto right",
                   "validationMessage": {
                       "302": "Please enter a heading."
-                  }
+                  },
+                  "required": true
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -3592,7 +3592,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3616,8 +3616,7 @@ json_values: |
                   "typeaheadEditable": true,
                   "endpoint": "\/cohesionapi\/link-autocomplete?q=",
                   "schema": {
-                      "type": "string",
-                      "required": true
+                      "type": "string"
                   },
                   "machineName": "link-to-page-or-url",
                   "tooltipPlacement": "auto right",
@@ -3644,7 +3643,8 @@ json_values: |
                   },
                   "validationMessage": {
                       "302": "Please enter a link."
-                  }
+                  },
+                  "required": true
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -3669,7 +3669,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3714,7 +3714,7 @@ json_values: |
                   "title": "Color",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -3799,7 +3799,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3817,7 +3817,7 @@ json_values: |
                   "type": "cohHelpText",
                   "options": {
                       "showClose": false,
-                      "helpType": "coh-help-text--help",
+                      "helpType": "help",
                       "helpText": "Text color is automatic based on your background color selection."
                   },
                   "showCondition": "[field.4ccf3565-7ea5-42cc-8673-7b1a3c27aac4] tags include 'Dark' OR [field.4ccf3565-7ea5-42cc-8673-7b1a3c27aac4] tags include 'Light' OR [field.4ccf3565-7ea5-42cc-8673-7b1a3c27aac4] tags include 'Color'"
@@ -3886,7 +3886,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3970,7 +3970,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4035,7 +4035,7 @@ json_values: |
                   "type": "cohHelpText",
                   "options": {
                       "showClose": false,
-                      "helpType": "coh-help-text--help",
+                      "helpType": "help",
                       "helpText": "Padding has been applied because you have set a background color or border."
                   },
                   "showCondition": "(!([field.4ccf3565-7ea5-42cc-8673-7b1a3c27aac4] rgba is undefined OR [field.4ccf3565-7ea5-42cc-8673-7b1a3c27aac4] is transparent)) OR [field.36118f86-c63d-4ff0-a9ed-07b3a0c46c6a] == 'border'"
@@ -4049,7 +4049,7 @@ json_values: |
                   "title": "Height",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -4096,7 +4096,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4153,7 +4153,7 @@ json_values: |
                   "options": {
                       "helpText": "# About this Content card\n- Use this card to highlight and link to internal and external content\n- The card is best placed within a Layout or Slide item component.\n\n# Card image\n- **Image -** For best results, upload a .png or .jpg no smaller than 568px x 352px. Large images will be resized. The image field is optional.\n- **Alt tag -** Enter an alt tag unless image is decorative.\n\n# Text\n- **Card heading element -** Select the required HTML heading element. Set as **Heading 3** by default.\n- **Card heading -** Enter a short card heading. The heading text is used as the card link and is required.\n- **Description -** Enter a short description. This field is optional.\n- **Call to action -** Enter call to action text. This text is used as a visible indicator that the card is a link.\n\n# Link\n- **Link to page or URL -** Add a link to an internal page or an external URL. When adding a link to an internal page, type the name of an internal page or external URL. This field is required.\n\n# Layout\n- **Card layout -** Select one of the two layout options available. Left aligned content aligns the text to the left. Center aligned content aligns the text to the center.\n\n# Color\n- **Background color -** Choose a background color from the color palette. When a background color is selected, the text color will be selected automatically. \n- **Text color -** Select an appropriate Light or Dark text color to contrast with the color of where the card is placed. **Note:** The text field only shows if no background color is selected.\n\n# Border\n- **Border -** Add border will add a 1px border around the card.\n- **Border color -** Select a border color. **Note:** The border color field only shows if you have selected Add border.\n\n# Padding\n- **Padding -** Apply padding around the content of the card. **Note:** If a border or background color is applied to the card, padding around the content will be applied automatically.\n\n# Height\n- **Height -** Set the card height to either **Fit to content** or **Fill space available**. Fill space available will make the card expand to fill the height available within the parent component. This option allows you to create layouts where the height of multiple cards are the same, achieving horizontal alignment.\n\n# Space below\n- **Add space below -** Add a space (margin) below the card. This is required if a space is desirable when adding this component above another component within the same parent layout component.",
                       "showClose": false,
-                      "helpType": "coh-help-text--help"
+                      "helpType": "help"
                   }
               },
               "contextVisibility": {
@@ -4500,9 +4500,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

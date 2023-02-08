@@ -17,8 +17,8 @@ dependencies:
     - cohesion_website_settings.cohesion_color.white
   content:
     - 'file:file:a21d5b69-d0da-4101-b13f-06cdbdf390ab'
-id: 1dc117b7
 label: 'Slide container'
+id: 1dc117b7
 json_values: |
   {
       "canvas": [
@@ -2076,7 +2076,7 @@ json_values: |
                   "title": "Slides to show and scroll",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-3-col",
+                  "columnCount": "3",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2095,8 +2095,8 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-1-col",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-television",
+                  "columnCount": "1",
+                  "breakpointIcon": "television",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2201,8 +2201,8 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-1-col",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-tablet",
+                  "columnCount": "1",
+                  "breakpointIcon": "tablet",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2291,8 +2291,8 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-1-col",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-mobile",
+                  "columnCount": "1",
+                  "breakpointIcon": "mobile",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2365,7 +2365,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -2418,7 +2418,7 @@ json_values: |
                   "title": "Pagination",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2464,7 +2464,7 @@ json_values: |
                   "title": "Space between slides",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -2511,7 +2511,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -2557,7 +2557,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -2614,7 +2614,7 @@ json_values: |
                   "options": {
                       "helpText": "# Using the Slider container component\n- Use the Slider container to add a slider to a layout. These are sometimes referred to as a carousel.\n- The Slider container requires Slides to be added using Slide item components. Content is added into the Slide items.\n\n# Slides to show and scroll (Desktop, Tablet and Phone)\n- **Show on (Desktop, Tablet, Phone) -** Set the number of slides you want to show on desktop, tablet and phone width devices. The number of slides shown will determine the width of each slide.\n- **Scroll on (Desktop, Tablet, Phone) -** Set the number of slides to scroll on desktop, tablet and phone width devices.\n\n# Pagination\n- **Pagination position -** Set the position of the pagination dots.\n\n# Space between slides\n- **Space between slides -** Set whether the slides have a space between them or no space between them.\n\n# Space left and right of slides\n- **Space left and right -** Add additional space to the left and right of the slides to accommodate the slider navigation arrows. This setting is recommended when the slides include text content where the navigation arrows may obscure the content.\n\n# Space below\n- **Add space below -** Add a space (margin) below the slider. This is required if a space is desirable when adding this component above another component within the same parent layout component.",
                       "showClose": false,
-                      "helpType": "coh-help-text--help"
+                      "helpType": "help"
                   }
               },
               "contextVisibility": {
@@ -2787,9 +2787,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

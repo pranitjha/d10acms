@@ -12,8 +12,8 @@ dependencies:
     - image.style.coh_xx_large_landscape
   content:
     - 'file:file:d4f899d0-de92-48f5-a064-30798b116387'
-id: cpt_3_column_layout
 label: '3 column layout'
+id: cpt_3_column_layout
 json_values: |
   {
       "canvas": [
@@ -3680,7 +3680,7 @@ json_values: |
                   "title": "Settings",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -3832,7 +3832,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3855,7 +3855,7 @@ json_values: |
               "settings": {
                   "title": "Desktop settings",
                   "type": "cohTabItem",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-television"
+                  "breakpointIcon": "television"
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -3867,7 +3867,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3946,7 +3946,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-3-col",
+                  "columnCount": "3",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -3964,7 +3964,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4123,7 +4123,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4287,7 +4287,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4446,7 +4446,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4610,7 +4610,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4769,7 +4769,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -4931,7 +4931,7 @@ json_values: |
               "settings": {
                   "title": "Tablet settings",
                   "type": "cohTabItem",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-tablet"
+                  "breakpointIcon": "tablet"
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -4943,7 +4943,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5022,7 +5022,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-3-col",
+                  "columnCount": "3",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5040,7 +5040,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5196,7 +5196,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5360,7 +5360,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5516,7 +5516,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5680,7 +5680,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5836,7 +5836,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-2-col",
+                  "columnCount": "2",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -5998,7 +5998,7 @@ json_values: |
               "settings": {
                   "title": "Phone settings",
                   "type": "cohTabItem",
-                  "breakpointIcon": "coh-breakpoint-icon coh-icon-mobile"
+                  "breakpointIcon": "mobile"
               },
               "contextVisibility": {
                   "condition": "ALL"
@@ -6010,7 +6010,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-col",
+                  "columnCount": "auto",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -6089,7 +6089,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 1,
                   "removePadding": 1,
-                  "columnCount": "coh-component-field-group-3-col",
+                  "columnCount": "3",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -6107,7 +6107,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -6263,7 +6263,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -6419,7 +6419,7 @@ json_values: |
                   "type": "cohSection",
                   "hideRowHeading": 0,
                   "removePadding": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpointIcon": "",
                   "breakpoints": false,
                   "propertiesMenu": false,
@@ -6584,7 +6584,7 @@ json_values: |
                   "title": "Row background color",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-1-col",
+                  "columnCount": "1",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -6621,7 +6621,7 @@ json_values: |
                   "title": "Row background image",
                   "type": "cohSection",
                   "hideRowHeading": 0,
-                  "columnCount": "coh-component-field-group-3-col",
+                  "columnCount": "3",
                   "breakpoints": false,
                   "propertiesMenu": false,
                   "disableScrollbar": true,
@@ -6713,7 +6713,7 @@ json_values: |
                   "type": "cohHelpText",
                   "options": {
                       "showClose": false,
-                      "helpType": "coh-help-text--help",
+                      "helpType": "help",
                       "helpText": "# Using column layout components\n- The layout components provide the structure of the page.\n- All content based components including basic, cards, accordions, tabs and maps should be placed within a layout component.\n- Use this component to create a 3 column layout.\n\n# Settings\n- **Width of content area -** Sets a maximum width to the content area. Boxed width restrains the content to a maximum set width. Full width allows the content to expand to fill the width available.\n- **Column alignment -** If the combined width of the columns is set to less than full width, they can be aligned horizontally to the left, center or right, or distributed evenly. \n- **Space between columns -** Set the columns to have a space (gutter) between them or no space between them. \n- **Padding top and bottom -** Set a space above and\/or below the content within the layout. This setting is needed when the layout is used at the top level as a section. It should be set to None if nesting this layout within another layout\n\n# Settings by device\n- **Section height -** Set the minimum height of the layout. Choose between Fit to content, % height or pixel height.\n- **Column width -** Set the width of each column.\n- **Column display order -** Set the order in which the columns are displayed. This is useful for changing the order of the columns by device width.\n- **Vertically align content -** If the content is smaller than the height of the column it's within, you can set it's vertical position to Top, Middle or Bottom. **Note:** The content within the column must have its height set to **Fit to content** and not **Fill space available** for vertical alignment to take effect.\n- **Offset column -** Move the column left or right on Desktop and Tablet width devices. On phone devices, all offsets are removed as the content will be stacked vertically.\n\n# Row background color\n- **Background color -** Optionally set the background color of the row.\n\n# Row background image\n- **Background image -** Optionally set a background image for the row.\n- **Alternative image for phone -** Toggle on to upload an alternative image to show on phones."
                   }
               },
@@ -7805,9 +7805,8 @@ json_values: |
           ]
       }
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

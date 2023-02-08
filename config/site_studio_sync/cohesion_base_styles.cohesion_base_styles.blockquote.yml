@@ -5,13 +5,18 @@ dependencies:
   config:
     - cohesion_website_settings.cohesion_color.brand-color
     - cohesion_website_settings.cohesion_icon_library.icomoon
-id: blockquote
 label: 'Block quote'
+id: blockquote
 json_values: |
   {
       "preview": {
           "text": "<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this.<\/p>\n\n<blockquote>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.<\/blockquote>\n\n<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.&nbsp;<\/p>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
       "styles": {
           "settings": {
@@ -206,10 +211,8 @@ json_values: |
               }
           }
       },
-      "sBackgroundColour": "#ffffff",
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -862,8 +865,7 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: false

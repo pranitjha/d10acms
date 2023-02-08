@@ -4,15 +4,19 @@ status: true
 dependencies:
   config:
     - cohesion_website_settings.cohesion_color.brand-color
-id: 48e09c60
 label: Breadcrumbs
+id: 48e09c60
 json_values: |
   {
       "preview": {
           "text": "<ul class=\"coh-preview\">\n\t<li><a>List item 1<\/a><\/li>\n\t<li><a>List item 2<\/a><\/li>\n\t<li><a>List item 3<\/a><\/li>\n\t<li><a>List item 1<\/a><\/li>\n<\/ul>\n\n<h1>This is a heading below the breadcrumbs<\/h1>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
-      "sBackgroundColour": "#FFFFFF",
       "styles": {
           "settings": {
               "element": "ul,ol,dl",
@@ -185,7 +189,6 @@ json_values: |
       },
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -637,13 +640,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-breadcrumbs
 custom_style_type: list
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 58

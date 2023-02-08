@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: pack_uikit_without_helpers
 label: 'UIKit without helpers'
-description: 'This package includes all of the UIKit components. It doesn''t include any helpers.'
+description: "This package includes all of the UIKit components. It doesn't include any helpers."
 excluded_entity_types: '[]'
 settings: |
   {
@@ -5232,4 +5232,3 @@ settings: |
           "checked": true
       }
   }
-  

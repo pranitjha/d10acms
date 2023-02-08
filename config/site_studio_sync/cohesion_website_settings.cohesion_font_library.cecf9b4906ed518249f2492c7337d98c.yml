@@ -2,8 +2,8 @@ uuid: 51ef8a14-6904-4d38-996a-bb2d40684f3e
 langcode: en
 status: true
 dependencies: {  }
-id: cecf9b4906ed518249f2492c7337d98c
 label: Roboto
+id: cecf9b4906ed518249f2492c7337d98c
 json_values: |
   {
       "type": "import",
@@ -11,9 +11,8 @@ json_values: |
       "name": "Roboto",
       "uid": "cecf9b4906ed518249f2492c7337d98c"
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true

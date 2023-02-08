@@ -2,8 +2,8 @@ uuid: 75556ff1-c6f0-48c8-b2a6-37a3a1cff6b4
 langcode: en
 status: true
 dependencies: {  }
-id: white
 label: White
+id: white
 json_values: |
   {
       "name": "White",
@@ -26,9 +26,8 @@ json_values: |
           }
       ]
   }
-  
 json_mapper: '{}'
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: false
 selectable: true

@@ -2,13 +2,18 @@ uuid: f7e6a81c-466a-48cc-8694-d04a8dd1ebfe
 langcode: en
 status: true
 dependencies: {  }
-id: fd99703e
 label: 'Padding top bottom large'
+id: fd99703e
 json_values: |
   {
       "preview": {
           "text": "<div class=\"coh-preview\">Default content for 'Layout'.<\/div>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
       "styles": {
           "settings": {
@@ -62,10 +67,8 @@ json_values: |
               }
           }
       },
-      "sBackgroundColour": "#FFFFFF",
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -134,13 +137,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-padding-top-bottom-large
 custom_style_type: layout
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 44

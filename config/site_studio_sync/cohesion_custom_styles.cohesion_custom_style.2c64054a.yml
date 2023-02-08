@@ -4,13 +4,18 @@ status: true
 dependencies:
   config:
     - cohesion_website_settings.cohesion_icon_library.icomoon
-id: 2c64054a
 label: 'Contact information'
+id: 2c64054a
 json_values: |
   {
       "preview": {
           "text": "<ul class=\"coh-preview\">\n\t<li class=\"place-contact-name\"><span>Contact name<\/span><\/li>\n\t<li class=\"place-company\"><span>Company<\/span><\/li>\n\t<li class=\"place-address\"><span>Address<\/span><\/li>\n\t<li class=\"place-telephone\"><span>Telephone<\/span><\/li>\n\t<li class=\"place-email\"><span>Email<\/span><\/li>\n<\/ul>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(255,255,255,1)"
+              }
+          }
       },
       "styles": {
           "settings": {
@@ -249,10 +254,8 @@ json_values: |
               }
           }
       },
-      "sBackgroundColour": "#FFFFFF",
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -1082,13 +1085,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-contact-information
 custom_style_type: list
 available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
 parent: null
 weight: 3

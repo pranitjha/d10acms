@@ -5,15 +5,19 @@ dependencies:
   config:
     - cohesion_custom_styles.cohesion_custom_style.5d3e1401
     - cohesion_website_settings.cohesion_color.black
-id: 5dc546e9
 label: 'Pre heading dark'
+id: 5dc546e9
 json_values: |
   {
       "preview": {
           "text": "<h1 class=\"coh-preview\">Default content for 'Heading'.<\/h1>\n",
-          "textFormat": "cohesion"
+          "textFormat": "cohesion",
+          "background": {
+              "value": {
+                  "rgba": "rgba(38,163,221,1)"
+              }
+          }
       },
-      "sBackgroundColour": "#26a3dd",
       "styles": {
           "settings": {
               "element": "h1",
@@ -46,7 +50,6 @@ json_values: |
       },
       "variableFields": []
   }
-  
 json_mapper: |
   {
       "styles": {
@@ -85,13 +88,13 @@ json_mapper: |
           "form": null
       }
   }
-  
-last_entity_update: entityupdate_0035
+last_entity_update: entityupdate_0041
 locked: false
 modified: true
 selectable: true
 class_name: .coh-style-pre-heading-dark
 custom_style_type: heading
 available_in_wysiwyg: true
+available_in_wysiwyg_inline: true
 parent: .coh-style-pre-heading
 weight: 38
