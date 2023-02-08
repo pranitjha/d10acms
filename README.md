@@ -103,7 +103,6 @@ project:
     protocol: https
     uri: '${project.local.protocol}://${project.local.hostname}'
 cm:
-  strategy: config-split
   core:
     install_from_config: true
 deploy:
