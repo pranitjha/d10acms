@@ -52,7 +52,7 @@ cd <project_name>
 ```
 * Initilize lando
 ```
-lando init --source cwd --recipe drupal9 --webroot docroot --name <project_name>
+lando init --source cwd --recipe drupal10 --webroot docroot --name <project_name>
 ```
 * Add BLT
 ```
@@ -73,7 +73,7 @@ composer require acquia/cohesion-theme
 * Update .lando.yml file
 ```
 name: <project_name>
-recipe: drupal9
+recipe: drupal10
 config:
   webroot: docroot
   php: '8.1'
@@ -120,9 +120,9 @@ validate:
 
 drupal:
   db:
-    database: drupal9
-    username: drupal9
-    password: drupal9
+    database: drupal10
+    username: drupal10
+    password: drupal10
     host: database
 
 project:
@@ -132,15 +132,15 @@ project:
 ```
 * Update docroot/sites/default/settings/local.settings.php file, Check the DB credentials and update with below details:
 ```
-$db_name = 'drupal9';
+$db_name = 'drupal10';
 
 /**
  * Database configuration.
  */
 $databases['default']['default'] = [
   'database' => $db_name,
-  'username' => 'drupal9',
-  'password' => 'drupal9',
+  'username' => 'drupal10',
+  'password' => 'drupal10',
   'host' => 'database',
   'port' => '3306',
   'driver' => 'mysql',
